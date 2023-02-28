@@ -2,6 +2,8 @@
 //~ By Behzad Zahedi
 //~ behzadxahedi@gmail.com
 
+// I won't be maintaining this project.
+
 /*
 
  The following functions are parts of Vallado ASTIOD code (http://celestrak.org/software/vallado-sw.php) and are slightly adapted to be used in this project:
