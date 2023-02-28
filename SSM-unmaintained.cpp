@@ -1341,66 +1341,6 @@ int main(int argc, char** argv) {
 
 		Matrix61z vCase4Dir = l.TrajGenArrival(Tearth, Tsaturn, 3, 6, sun.mu(), "SV_Case4_dir.dat", "COE_Case4_dir.dat", 's', 'd', odeStep, 0, dum, Rpark, saturn.mu());
 	
-	// Case 5 (VEEGA)
-		
-		//cout << "Case 5 (VEEGA)" << endl << endl;
-		//
-		//Tearth << 1997, 10, 15, 9, 36, 0; // 2450736.9
-		//Tvenus << 1998, 4, 26, 14, 24, 0; //2450930.1
-		//Tdsm << 1998, 12, 3, 7, 12, 0; //2451150.8
-		//Tvenus2 << 1999, 6, 24, 19, 12, 0; //2451354.3
-		//Tearth2 << 1999, 8, 18, 4, 48, 0; //2451408.7
-		//Tjupiter << 2000, 12, 30, 12, 0, 0; //2451909
-		//Tsaturn << 2004, 7, 1, 9, 36, 0; //2453187.9
-
-		//Matrix61z vCase5Leg1 = l.TrajGenFlyby(Tearth, Tvenus, 3, 2, sun.mu(), "SV_Case5_Leg1.dat", "COE_Case5_Leg1.dat", 'l', 'd', odeStep, 0, dum);
-		//Vstart << vCase5Leg1(3), vCase5Leg1(4), vCase5Leg1(5);
-
-		//Matrix61z vCase5Leg2 = l.TrajGenFlyby(Tvenus, Tdsm, 2, 0, sun.mu(), "SV_Case5_Leg2.dat", "COE_Case5_Leg2.dat", 's', 'd', odeStep, 1, Vstart);
-		//Vstart << vCase5Leg2(3), vCase5Leg2(4), vCase5Leg2(5);
-
-		//Matrix61z vCase5Leg3 = l.TrajGenFlyby(Tdsm, Tvenus2, 0, 2, sun.mu(), "SV_Case5_Leg3.dat", "COE_Case5_Leg3.dat", 's', 'd', odeStep, 1, Vstart);
-		//Vstart << vCase5Leg3(3), vCase5Leg3(4), vCase5Leg3(5);
-
-		//Matrix61z vCase5Leg4 = l.TrajGenFlyby(Tvenus2, Tearth2, 2, 3, sun.mu(), "SV_Case5_Leg4.dat", "COE_Case5_Leg4.dat", 's', 'd', odeStep, 1, Vstart);
-		//Vstart << vCase5Leg4(3), vCase5Leg4(4), vCase5Leg4(5);
-
-		//Matrix61z vCase5Leg5 = l.TrajGenFlyby(Tearth2, Tjupiter, 3, 5, sun.mu(), "SV_Case5_Leg5.dat", "COE_Case5_Leg5.dat", 's', 'd', odeStep, 1, Vstart);
-		//Vstart << vCase5Leg5(3), vCase5Leg5(4), vCase5Leg5(5);
-
-		//Matrix61z vCase5Leg6 = l.TrajGenArrival(Tjupiter, Tsaturn, 5, 6, sun.mu(), "SV_Case5_Leg6.dat", "COE_Case5_Leg6.dat", 's', 'd', odeStep, 1, Vstart, Rpark, saturn.mu());
-
-		//cout << "Case 5 Direct" << endl << endl;
-
-		//Matrix61z vCase5Dir = l.TrajGenArrival(Tearth, Tsaturn, 3, 6, sun.mu(), "SV_Case5_dir.dat", "COE_Case5_dir.dat", 's', 'd', odeStep, 0, dum, Rpark, saturn.mu());
-
-		//// Case 6 (VEEGA No DSM)
-
-		//cout << "Case 6 (VEEGA No DSM)" << endl << endl;
-
-		//Tearth << 1997, 10, 15, 9, 36, 0; // 2450736.9
-		//Tvenus << 1998, 4, 26, 14, 24, 0; //2450930.1
-		//Tdsm << 1998, 12, 3, 7, 12, 0; //2451150.8
-		//Tvenus2 << 1999, 6, 24, 19, 12, 0; //2451354.3
-		//Tearth2 << 1999, 8, 18, 4, 48, 0; //2451408.7
-		//Tjupiter << 2000, 12, 30, 12, 0, 0; //2451909
-		//Tsaturn << 2004, 7, 1, 9, 36, 0; //2453187.9
-
-		//Matrix61z vCase6Leg1 = l.TrajGenFlyby(Tearth, Tvenus2, 3, 2, sun.mu(), "SV_Case6_Leg1.dat", "COE_Case6_Leg1.dat", 'l', 'd', odeStep, 0, dum);
-		//Vstart << vCase6Leg1(3), vCase6Leg1(4), vCase6Leg1(5);
-
-		//Matrix61z vCase6Leg2 = l.TrajGenFlyby(Tvenus2, Tearth2, 2, 3, sun.mu(), "SV_Case6_Leg2.dat", "COE_Case6_Leg2.dat", 's', 'd', odeStep, 1, Vstart);
-		//Vstart << vCase6Leg2(3), vCase6Leg2(4), vCase6Leg2(5);
-
-		//Matrix61z vCase6Leg3 = l.TrajGenFlyby(Tearth2, Tjupiter, 3, 5, sun.mu(), "SV_Case6_Leg3.dat", "COE_Case6_Leg3.dat", 's', 'd', odeStep, 1, Vstart);
-		//Vstart << vCase6Leg3(3), vCase6Leg3(4), vCase6Leg3(5);
-
-		//Matrix61z vCase6Leg4 = l.TrajGenArrival(Tjupiter, Tsaturn, 5, 6, sun.mu(), "SV_Case6_Leg4.dat", "COE_Case6_Leg4.dat", 's', 'd', odeStep, 1, Vstart, Rpark, saturn.mu());
-
-		//cout << "Case 6 Direct" << endl << endl;
-
-		//Matrix61z vCase6Dir = l.TrajGenArrival(Tearth, Tsaturn, 3, 6, sun.mu(), "SV_Case6_dir.dat", "COE_Case6_dir.dat", 's', 'd', odeStep, 0, dum, Rpark, saturn.mu());
-
 		cout << "END" << endl;
 
 };
