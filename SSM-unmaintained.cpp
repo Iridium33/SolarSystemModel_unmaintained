@@ -1,6 +1,6 @@
 //~ Solar System Model
 //~ By Behzad Zahedi
-//~ behzadxahedi@gmail.com
+//~ behzad.zahedi.edu@gmail.com
 
 // I won't be maintaining this project.
 
